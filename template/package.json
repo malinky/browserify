@@ -6,11 +6,11 @@
   "private": true,
   {{/private}}
   "scripts": {
-    "watchify": "watchify -vd -p browserify-hmr -e src/main.js -o dist/build.js",
+    "watchify": "watchify -vd -p browserify-hmr -e resources/assets/js/app.js -o public/js/app.js",
     "serve": "http-server -c 1 -a localhost",
     "dev": "npm-run-all --parallel watchify serve",
-    "build": "cross-env NODE_ENV=production browserify -e src/main.js | uglifyjs -c warnings=false -m > dist/build.js",
-    "lint": "eslint --ext .js,.vue src test/unit",
+    "build": "cross-env NODE_ENV=production browserify -e resources/assets/js/app.js | uglifyjs -c warnings=false -m > public/js/app.js",
+    "lint": "eslint --ext .js,.vue resources/assets/js test/unit",
     "test": "karma start karma.conf.js"
   },
   "browserify": {
