@@ -7,7 +7,7 @@
   {{/private}}
   "scripts": {
     "watchify": "watchify -vd -p browserify-hmr -e resources/assets/js/app.js -o public/js/app.js",
-    "serve": "http-server -c 1 -a localhost",
+    "serve": "http-server ./ -c 1 -a localhost",
     "dev": "npm-run-all --parallel watchify serve",
     "build": "cross-env NODE_ENV=production browserify -e resources/assets/js/app.js | uglifyjs -c warnings=false -m > public/js/app.js",
     "lint": "eslint --ext .js,.vue resources/assets/js test/unit",
