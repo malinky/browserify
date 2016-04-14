@@ -1,10 +1,3 @@
-Scaffolding template forked from [vuejs-templates/browserify](https://github.com/vuejs-templates/browserify).
-
-# Folder Structure to Laravel-Elixir
-
-* src -> resources
-* dist -> public
-
 # {{ name }}
 
 > {{ description }}

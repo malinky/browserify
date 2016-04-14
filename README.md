@@ -2,6 +2,13 @@
 
 > A full-featured Browserify + `vueify` setup with hot-reload, linting & unit testing.
 
+> Scaffolding template forked from [vuejs-templates/browserify](https://github.com/vuejs-templates/browserify).
+
+### Folder Structure Changed to Match Laravel-Elixir
+
+* `src` -> `resources`
+* `dist` -> `public`
+
 ### Usage
 
 This is a project template for [vue-cli](https://github.com/vuejs/vue-cli).
